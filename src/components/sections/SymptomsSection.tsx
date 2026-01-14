@@ -65,7 +65,7 @@ const SymptomsSection = () => {
         }} transition={{
           duration: 0.6
         }}>
-            <img alt="Veterinário examinando gato laranja com estetoscópio" className="w-full h-auto rounded-3xl image-premium" src="/lovable-uploads/d9beb388-4733-44ab-a285-fc94d43ee417.jpg" />
+            <img alt="Veterinário examinando gato laranja com estetoscópio" className="w-full h-auto rounded-3xl image-premium" src="/lovable-uploads/a848d780-5ecb-42b0-8f62-61878d00c665.jpg" />
           </motion.div>
 
           {/* Content Column */}
