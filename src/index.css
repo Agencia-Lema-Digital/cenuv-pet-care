@@ -2,81 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    /* Brand Colors - CENUV */
-    --background: 27 93% 93%; /* Laranja claro #feebdc */
-    --foreground: 330 50% 24%; /* Rosa escuro #5d1e3b */
+    /* Brand Colors - CENUV Premium */
+    --background: 30 50% 97%; /* Warm cream #FDF9F3 */
+    --foreground: 345 43% 22%; /* Burgundy dark #4E1E2A */
 
     --card: 0 0% 100%;
-    --card-foreground: 330 50% 24%;
+    --card-foreground: 345 43% 22%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 330 50% 24%;
+    --popover-foreground: 345 43% 22%;
 
-    --primary: 330 50% 24%; /* Rosa escuro #5d1e3b */
-    --primary-foreground: 27 93% 93%;
+    --primary: 345 43% 22%; /* Burgundy dark #4E1E2A */
+    --primary-foreground: 30 50% 97%;
 
-    --secondary: 359 35% 63%; /* Vermelho/coral #c57d7e */
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 25 65% 95%; /* Warm peach #FFF4EB */
+    --secondary-foreground: 345 43% 22%;
 
-    --muted: 41 86% 78%; /* Laranja pastel #f7d899 */
-    --muted-foreground: 330 40% 30%;
+    --muted: 25 40% 92%; /* Light cream */
+    --muted-foreground: 20 20% 40%; /* #7D5A4A */
 
-    --accent: 32 84% 48%; /* Laranja #de7f17 */
+    --accent: 25 80% 55%; /* Warm orange */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 330 30% 80%;
-    --input: 330 30% 80%;
-    --ring: 330 50% 24%;
+    --border: 25 30% 88%;
+    --input: 25 30% 88%;
+    --ring: 345 43% 22%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
     /* Custom brand colors */
-    --cenuv-rose: 330 50% 24%;
-    --cenuv-coral: 359 35% 63%;
-    --cenuv-cream: 27 93% 93%;
+    --cenuv-burgundy: 345 43% 22%; /* #4E1E2A */
+    --cenuv-burgundy-light: 345 35% 35%;
+    --cenuv-coral: 359 45% 65%;
+    --cenuv-cream: 30 50% 97%; /* #FDF9F3 */
+    --cenuv-peach: 25 65% 95%; /* #FFF4EB */
     --cenuv-orange: 32 84% 48%;
     --cenuv-gold: 41 86% 78%;
+    --cenuv-text: 20 30% 18%; /* #2E1D1C */
+    --cenuv-text-muted: 20 20% 40%; /* #7D5A4A */
     
     /* Hero dark colors for contrast */
-    --cenuv-dark: 330 50% 24%; /* #5d1e3b */
-    --cenuv-dark-medium: 330 48% 34%; /* #802e54 */
-    --cenuv-dark-deep: 330 72% 7%; /* #20030d */
+    --cenuv-dark: 345 43% 22%;
+    --cenuv-dark-medium: 345 40% 30%;
+    --cenuv-dark-deep: 345 50% 12%;
 
     /* WhatsApp */
-    --whatsapp: 142 70% 45%;
+    --whatsapp: 142 70% 45%; /* #25D366 */
     --whatsapp-hover: 142 70% 38%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(27 93% 93%) 0%, hsl(41 86% 88%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(30 50% 97%) 0%, hsl(25 65% 95%) 100%);
     --gradient-cta: linear-gradient(135deg, hsl(142 70% 45%) 0%, hsl(142 70% 38%) 100%);
-    --gradient-warm: linear-gradient(180deg, hsl(27 93% 96%) 0%, hsl(41 86% 90%) 100%);
+    --gradient-warm: linear-gradient(180deg, hsl(30 50% 98%) 0%, hsl(25 65% 96%) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(345 43% 22%) 0%, hsl(345 35% 35%) 100%);
   }
 
   .dark {
-    --background: 330 50% 10%;
-    --foreground: 27 93% 93%;
-    --card: 330 50% 15%;
-    --card-foreground: 27 93% 93%;
-    --popover: 330 50% 15%;
-    --popover-foreground: 27 93% 93%;
-    --primary: 27 93% 93%;
-    --primary-foreground: 330 50% 24%;
-    --secondary: 359 35% 45%;
+    --background: 345 43% 10%;
+    --foreground: 30 50% 97%;
+    --card: 345 43% 15%;
+    --card-foreground: 30 50% 97%;
+    --popover: 345 43% 15%;
+    --popover-foreground: 30 50% 97%;
+    --primary: 30 50% 97%;
+    --primary-foreground: 345 43% 22%;
+    --secondary: 345 35% 25%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 330 30% 25%;
-    --muted-foreground: 27 60% 70%;
+    --muted: 345 30% 25%;
+    --muted-foreground: 30 60% 70%;
     --accent: 32 84% 48%;
     --accent-foreground: 0 0% 100%;
-    --border: 330 30% 25%;
-    --input: 330 30% 25%;
-    --ring: 27 93% 93%;
+    --border: 345 30% 25%;
+    --input: 345 30% 25%;
+    --ring: 30 50% 97%;
   }
 }
 
@@ -90,53 +95,136 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Poppins', sans-serif;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 }
 
 @layer components {
-  .font-cursive {
-    font-family: 'Pacifico', cursive;
+  .font-display {
+    font-family: 'Playfair Display', serif;
   }
 
+  .font-body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  /* Premium WhatsApp Button */
   .btn-whatsapp {
-    @apply inline-flex items-center justify-center gap-3 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    @apply inline-flex items-center justify-center gap-3 px-8 py-4 text-lg font-bold rounded-full transition-all duration-300 transform hover:scale-105;
     background: linear-gradient(135deg, hsl(142 70% 45%) 0%, hsl(142 70% 38%) 100%);
     color: white;
+    box-shadow: 0 10px 40px -10px hsl(142 70% 40% / 0.5);
   }
 
   .btn-whatsapp:hover {
     background: linear-gradient(135deg, hsl(142 70% 38%) 0%, hsl(142 70% 32%) 100%);
+    box-shadow: 0 15px 50px -10px hsl(142 70% 35% / 0.6);
   }
 
+  /* Section spacing */
   .section-padding {
-    @apply px-4 py-16 md:py-20 lg:py-24;
+    @apply px-4 md:px-12 py-12 md:py-20 lg:py-24;
   }
 
   .container-narrow {
-    @apply max-w-4xl mx-auto px-4;
+    @apply max-w-5xl mx-auto px-4;
   }
 
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4;
+  }
+
+  /* Premium text gradient */
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(330 50% 24%) 0%, hsl(359 35% 50%) 100%);
+    background-image: linear-gradient(135deg, hsl(345 43% 22%) 0%, hsl(345 35% 40%) 100%);
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(41 86% 60%) 0%, hsl(32 84% 55%) 100%);
+  }
+
+  /* Premium cards */
+  .card-premium {
+    @apply bg-white rounded-2xl p-6 md:p-8 border border-border/50;
+    box-shadow: 0 4px 24px -4px hsl(345 43% 22% / 0.08);
+    transition: all 0.3s ease;
+  }
+
+  .card-premium:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 32px -4px hsl(345 43% 22% / 0.12);
   }
 
   .card-soft {
-    @apply bg-card rounded-2xl p-6 md:p-8 shadow-lg border border-border/50;
+    @apply bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-border/50;
   }
 
+  /* Symptom items */
   .symptom-item {
-    @apply flex items-center gap-3 p-4 bg-card/80 rounded-xl border border-border/30 transition-all duration-300 hover:shadow-md hover:border-secondary/50;
+    @apply flex items-center gap-4 p-5 bg-white rounded-2xl border border-border/30 transition-all duration-300;
+    box-shadow: 0 2px 12px -2px hsl(345 43% 22% / 0.06);
   }
 
+  .symptom-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px -4px hsl(345 43% 22% / 0.1);
+    border-color: hsl(var(--cenuv-coral) / 0.5);
+  }
+
+  /* Step numbers */
   .step-number {
-    @apply w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold;
-    background: linear-gradient(135deg, hsl(330 50% 24%) 0%, hsl(359 35% 50%) 100%);
-    color: white;
+    @apply w-14 h-14 rounded-full flex items-center justify-center text-xl font-bold text-white;
+    background: linear-gradient(135deg, hsl(345 43% 22%) 0%, hsl(345 35% 35%) 100%);
+    box-shadow: 0 4px 16px -4px hsl(345 43% 22% / 0.4);
   }
 
+  /* Section backgrounds */
+  .bg-cream {
+    background-color: hsl(30 50% 97%);
+  }
+
+  .bg-peach {
+    background-color: hsl(25 65% 95%);
+  }
+
+  .bg-warm-gradient {
+    background: linear-gradient(180deg, hsl(30 50% 98%) 0%, hsl(25 65% 96%) 100%);
+  }
+
+  /* Typography */
+  .heading-xl {
+    @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .heading-lg {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .heading-md {
+    @apply text-xl md:text-2xl lg:text-3xl font-semibold leading-tight;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .body-lg {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  .body-md {
+    @apply text-sm md:text-base leading-relaxed;
+  }
+
+  /* Image styles */
+  .image-premium {
+    @apply rounded-2xl object-cover;
+    box-shadow: 0 8px 32px -8px hsl(345 43% 22% / 0.2);
+  }
+
+  /* Animations */
   .fade-in {
     animation: fadeIn 0.6s ease-out forwards;
   }
@@ -152,6 +240,36 @@
     }
   }
 
+  .slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.6s ease-out forwards;
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   .pulse-gentle {
     animation: pulseGentle 2s ease-in-out infinite;
   }
@@ -161,8 +279,14 @@
       transform: scale(1);
     }
     50% {
-      transform: scale(1.02);
+      transform: scale(1.03);
     }
+  }
+
+  /* Decorative elements */
+  .decorative-blob {
+    @apply absolute pointer-events-none opacity-20;
+    filter: blur(60px);
   }
 }
 

@@ -1,59 +1,89 @@
+import { motion } from "framer-motion";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import abstractWine from "@/assets/elements/abstract-wine.png";
-import boneWine from "@/assets/elements/bone-wine.png";
+import { MessageCircle, Phone, Calendar, Stethoscope, FileCheck } from "lucide-react";
 
 const steps = [
-  { number: 1, text: "Você fala conosco pelo WhatsApp" },
-  { number: 2, text: "Nossa equipe faz a primeira orientação" },
-  { number: 3, text: "Agendamos a consulta" },
-  { number: 4, text: "Seu pet passa por avaliação especializada" },
-  { number: 5, text: "Você recebe diagnóstico e direcionamento de tratamento" },
+  { number: 1, text: "Você fala conosco pelo WhatsApp", icon: MessageCircle },
+  { number: 2, text: "Nossa equipe faz a primeira orientação", icon: Phone },
+  { number: 3, text: "Agendamos a consulta", icon: Calendar },
+  { number: 4, text: "Seu pet passa por avaliação especializada", icon: Stethoscope },
+  { number: 5, text: "Você recebe diagnóstico e direcionamento de tratamento", icon: FileCheck },
 ];
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 }
+};
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.1
+    }
+  }
+};
 
 const ProcessSection = () => {
   return (
-    <section className="section-padding bg-card relative overflow-hidden">
+    <section id="processo" className="section-padding bg-white relative overflow-hidden" aria-labelledby="process-heading">
       {/* Decorative elements */}
-      <img 
-        src={abstractWine} 
-        alt="" 
-        className="absolute -top-24 -right-24 w-56 h-56 opacity-10 pointer-events-none"
-      />
-      <img 
-        src={boneWine} 
-        alt="" 
-        className="absolute -bottom-4 -left-12 w-40 opacity-10 pointer-events-none -rotate-12"
-      />
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-cenuv-gold/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-cenuv-peach/30 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
       
       <div className="container-narrow relative z-10">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 text-foreground">
+        <motion.h2 
+          id="process-heading"
+          className="heading-lg text-foreground text-center mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
           Como funciona o atendimento no CENUV?
-        </h2>
+        </motion.h2>
 
-        <div className="relative">
+        <motion.div 
+          className="relative max-w-2xl mx-auto"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           {/* Connecting line */}
-          <div className="absolute left-6 top-6 bottom-6 w-0.5 bg-gradient-to-b from-primary via-cenuv-coral to-cenuv-orange hidden md:block" />
+          <div className="absolute left-7 top-8 bottom-8 w-0.5 bg-gradient-to-b from-primary via-cenuv-coral to-cenuv-orange hidden md:block" />
           
           <div className="space-y-6">
             {steps.map((step, index) => (
-              <div 
+              <motion.div 
                 key={index}
                 className="flex items-center gap-6 relative"
+                variants={fadeInUp}
+                transition={{ duration: 0.4 }}
               >
                 <div className="step-number relative z-10 flex-shrink-0">
                   {step.number}
                 </div>
-                <div className="flex-1 p-5 bg-background rounded-xl border border-border/50 shadow-sm">
-                  <p className="text-foreground text-lg font-medium">{step.text}</p>
+                <div className="flex-1 card-premium flex items-center gap-4">
+                  <step.icon className="w-6 h-6 text-cenuv-coral flex-shrink-0" />
+                  <p className="text-foreground body-lg font-medium">{step.text}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex justify-center mt-12">
+        <motion.div 
+          className="flex justify-center mt-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
           <WhatsAppButton text="Iniciar atendimento agora" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
