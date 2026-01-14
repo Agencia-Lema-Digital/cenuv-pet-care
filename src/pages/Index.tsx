@@ -6,7 +6,7 @@ import AuthoritySection from "@/components/sections/AuthoritySection";
 import TrustSection from "@/components/sections/TrustSection";
 import ProcessSection from "@/components/sections/ProcessSection";
 import ObjectionsSection from "@/components/sections/ObjectionsSection";
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import SocialProofSection from "@/components/sections/SocialProofSection";
 import FinalCTASection from "@/components/sections/FinalCTASection";
 
 const Index = () => {
@@ -20,7 +20,7 @@ const Index = () => {
         <TrustSection />
         <ProcessSection />
         <ObjectionsSection />
-        <TestimonialsSection />
+        <SocialProofSection />
         <FinalCTASection />
       </main>
       <FloatingWhatsApp />
