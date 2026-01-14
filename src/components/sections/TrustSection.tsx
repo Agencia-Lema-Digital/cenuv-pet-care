@@ -21,9 +21,9 @@ const TrustSection = () => {
         }} transition={{
           duration: 0.6
         }}>
-            <img src={vetComforting} alt="Veterinária segurando cachorro branco com carinho" className="w-full h-auto rounded-3xl" style={{
+            <img alt="Veterinária segurando cachorro branco com carinho" className="w-full h-auto rounded-3xl" style={{
             boxShadow: "0 8px 32px -8px rgba(0,0,0,0.3)"
-          }} />
+          }} src="/lovable-uploads/fbbf32e9-cc6d-40d0-b29f-9616d2a34369.jpg" />
           </motion.div>
 
           {/* Content Column */}
