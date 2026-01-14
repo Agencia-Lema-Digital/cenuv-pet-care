@@ -71,7 +71,7 @@ const TrustSection = () => {
             delay: 0.3
           }}>
               <Heart className="w-8 h-8 text-cenuv-gold animate-pulse" fill="currentColor" />
-              <p className="text-xl md:text-2xl lg:text-3xl font-display italic">
+              <p className="text-xl md:text-2xl lg:text-3xl italic font-sans">
                 Seu pet sente. Você sente. Nós cuidamos.
               </p>
               <Heart className="w-8 h-8 text-cenuv-gold animate-pulse" fill="currentColor" />
