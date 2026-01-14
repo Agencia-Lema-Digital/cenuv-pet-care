@@ -22,9 +22,9 @@ const FinalCTASection = () => {
         }} transition={{
           duration: 0.6
         }}>
-            <img src={vetCatCloseup} alt="Veterinário examinando gato com carinho e profissionalismo" className="w-full h-auto rounded-3xl" style={{
+            <img alt="Veterinário examinando gato com carinho e profissionalismo" className="w-full h-auto rounded-3xl" style={{
             boxShadow: "0 8px 32px -8px rgba(0,0,0,0.4)"
-          }} />
+          }} src="/lovable-uploads/1fbb9f15-d536-4eac-b38f-65613beba858.jpg" />
           </motion.div>
 
           {/* Content Column */}
