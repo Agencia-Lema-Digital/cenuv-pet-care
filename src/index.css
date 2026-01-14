@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Pacifico&display=swap');
+
+@layer base {
+  :root {
+    /* Brand Colors - CENUV */
+    --background: 27 93% 93%; /* Laranja claro #feebdc */
+    --foreground: 330 50% 24%; /* Rosa escuro #5d1e3b */
+
+    --card: 0 0% 100%;
+    --card-foreground: 330 50% 24%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 330 50% 24%;
+
+    --primary: 330 50% 24%; /* Rosa escuro #5d1e3b */
+    --primary-foreground: 27 93% 93%;
+
+    --secondary: 359 35% 63%; /* Vermelho/coral #c57d7e */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 41 86% 78%; /* Laranja pastel #f7d899 */
+    --muted-foreground: 330 40% 30%;
+
+    --accent: 32 84% 48%; /* Laranja #de7f17 */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 330 30% 80%;
+    --input: 330 30% 80%;
+    --ring: 330 50% 24%;
+
+    --radius: 0.75rem;
+
+    /* Custom brand colors */
+    --cenuv-rose: 330 50% 24%;
+    --cenuv-coral: 359 35% 63%;
+    --cenuv-cream: 27 93% 93%;
+    --cenuv-orange: 32 84% 48%;
+    --cenuv-gold: 41 86% 78%;
+    
+    /* Hero dark colors for contrast */
+    --cenuv-dark: 330 50% 24%; /* #5d1e3b */
+    --cenuv-dark-medium: 330 48% 34%; /* #802e54 */
+    --cenuv-dark-deep: 330 72% 7%; /* #20030d */
+
+    /* WhatsApp */
+    --whatsapp: 142 70% 45%;
+    --whatsapp-hover: 142 70% 38%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(27 93% 93%) 0%, hsl(41 86% 88%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(142 70% 45%) 0%, hsl(142 70% 38%) 100%);
+    --gradient-warm: linear-gradient(180deg, hsl(27 93% 96%) 0%, hsl(41 86% 90%) 100%);
+  }
+
+  .dark {
+    --background: 330 50% 10%;
+    --foreground: 27 93% 93%;
+    --card: 330 50% 15%;
+    --card-foreground: 27 93% 93%;
+    --popover: 330 50% 15%;
+    --popover-foreground: 27 93% 93%;
+    --primary: 27 93% 93%;
+    --primary-foreground: 330 50% 24%;
+    --secondary: 359 35% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 330 30% 25%;
+    --muted-foreground: 27 60% 70%;
+    --accent: 32 84% 48%;
+    --accent-foreground: 0 0% 100%;
+    --border: 330 30% 25%;
+    --input: 330 30% 25%;
+    --ring: 27 93% 93%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .font-cursive {
+    font-family: 'Pacifico', cursive;
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-3 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    background: linear-gradient(135deg, hsl(142 70% 45%) 0%, hsl(142 70% 38%) 100%);
+    color: white;
+  }
+
+  .btn-whatsapp:hover {
+    background: linear-gradient(135deg, hsl(142 70% 38%) 0%, hsl(142 70% 32%) 100%);
+  }
+
+  .section-padding {
+    @apply px-4 py-16 md:py-20 lg:py-24;
+  }
+
+  .container-narrow {
+    @apply max-w-4xl mx-auto px-4;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(330 50% 24%) 0%, hsl(359 35% 50%) 100%);
+  }
+
+  .card-soft {
+    @apply bg-card rounded-2xl p-6 md:p-8 shadow-lg border border-border/50;
+  }
+
+  .symptom-item {
+    @apply flex items-center gap-3 p-4 bg-card/80 rounded-xl border border-border/30 transition-all duration-300 hover:shadow-md hover:border-secondary/50;
+  }
+
+  .step-number {
+    @apply w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold;
+    background: linear-gradient(135deg, hsl(330 50% 24%) 0%, hsl(359 35% 50%) 100%);
+    color: white;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .pulse-gentle {
+    animation: pulseGentle 2s ease-in-out infinite;
+  }
+
+  @keyframes pulseGentle {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
