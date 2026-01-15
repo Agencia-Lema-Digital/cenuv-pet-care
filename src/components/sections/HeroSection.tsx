@@ -97,7 +97,7 @@ const HeroSection = () => {
           delay: 0.3
         }}>
             <div className="relative">
-              <img alt="Veterinária examinando cachorro com carinho em clínica moderna" className="w-full h-auto rounded-3xl image-premium object-fill border-0 border-dotted shadow-none" src="/lovable-uploads/d5fa911f-f350-4a08-a46a-1651c83c864f.png" />
+              <img alt="Veterinária examinando cachorro com carinho em clínica moderna" className="w-full h-auto rounded-3xl image-premium object-fill border-0 border-dotted shadow-none" src="/lovable-uploads/a301d8ec-265b-457d-9b35-73f035aa7586.jpg" />
               {/* Floating accent */}
               <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-gradient-to-br from-cenuv-gold to-cenuv-orange rounded-2xl opacity-80 blur-sm" />
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-cenuv-coral to-primary rounded-full opacity-60 blur-sm" />
