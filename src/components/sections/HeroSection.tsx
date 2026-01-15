@@ -20,9 +20,9 @@ const staggerContainer = {
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-br from-cenuv-cream via-cenuv-peach/30 to-cenuv-cream overflow-hidden">
-      <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <section className="bg-[#FFF4EB] overflow-hidden min-h-[90vh] flex items-center">
+      <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-20 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text Column - Left */}
           <motion.div 
             className="order-2 md:order-1 text-left"
@@ -84,18 +84,22 @@ const HeroSection = () => {
             </motion.div>
           </motion.div>
 
-          {/* Image Column - Right */}
+          {/* Image Column - Right with lateral opacity */}
           <motion.div 
             className="order-1 md:order-2"
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <div className="relative">
+            <div className="relative w-full h-[400px] md:h-[550px]">
               <img 
                 src="/lovable-uploads/a301d8ec-265b-457d-9b35-73f035aa7586.jpg"
-                alt="Veterinária segurando cachorro com carinho em clínica especializada"
-                className="w-full h-[400px] md:h-[500px] object-cover rounded-3xl md:rounded-l-3xl md:rounded-r-[32px] shadow-xl"
+                alt="Veterinária segurando pet com carinho em clínica especializada"
+                className="w-full h-full object-cover rounded-3xl"
+              />
+              {/* Left side opacity gradient - blends into background */}
+              <div 
+                className="absolute left-0 top-0 h-full w-1/3 bg-gradient-to-r from-[#FFF4EB]/90 via-[#FFF4EB]/40 to-transparent rounded-l-3xl pointer-events-none" 
               />
               {/* Decorative elements */}
               <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-gradient-to-br from-cenuv-gold to-cenuv-orange rounded-2xl opacity-70 blur-sm -z-10" />
