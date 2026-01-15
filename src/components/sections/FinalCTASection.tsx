@@ -93,7 +93,7 @@ const FinalCTASection = () => {
                 <span className="text-sm md:text-base">Atendimento especializado</span>
               </div>
               <div className="flex items-center gap-2 opacity-90">
-                <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-white/10 items-center justify-center flex flex-row">
                   <Heart className="w-5 h-5" />
                 </div>
                 <span className="text-sm md:text-base">Humanizado</span>
