@@ -4,6 +4,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import SymptomsSection from "@/components/sections/SymptomsSection";
 import AuthoritySection from "@/components/sections/AuthoritySection";
 import TrustSection from "@/components/sections/TrustSection";
+import TelemedicineSection from "@/components/sections/TelemedicineSection";
 import ProcessSection from "@/components/sections/ProcessSection";
 import ObjectionsSection from "@/components/sections/ObjectionsSection";
 import SocialProofSection from "@/components/sections/SocialProofSection";
@@ -13,11 +14,12 @@ const Index = () => {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main className="min-h-screen pt-16 md:pt-20">
         <HeroSection />
         <SymptomsSection />
         <AuthoritySection />
         <TrustSection />
+        <TelemedicineSection />
         <ProcessSection />
         <ObjectionsSection />
         <SocialProofSection />
