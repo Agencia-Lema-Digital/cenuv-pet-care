@@ -88,7 +88,7 @@ const AuthoritySection = () => {
           duration: 0.6,
           delay: 0.2
         }}>
-            <img alt="Veterinários realizando ultrassom em cachorro" className="w-full h-auto rounded-3xl image-premium" src="/lovable-uploads/7e9e45e4-415c-47c3-943a-deb16c9df62e.jpg" />
+            <img alt="Veterinários realizando ultrassom em cachorro" className="w-full h-auto rounded-3xl image-premium" src="/lovable-uploads/773ebe79-54ab-4868-baee-f02dfef1d0cf.png" />
           </motion.div>
         </div>
 

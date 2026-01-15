@@ -23,7 +23,7 @@ const TrustSection = () => {
         }}>
             <img alt="Veterinária segurando cachorro branco com carinho" className="w-full h-auto rounded-3xl" style={{
             boxShadow: "0 8px 32px -8px rgba(0,0,0,0.3)"
-          }} src="/lovable-uploads/fbbf32e9-cc6d-40d0-b29f-9616d2a34369.jpg" />
+          }} src="/lovable-uploads/aae24f4c-63e4-4eeb-9f83-b3d24e7aeb2d.png" />
           </motion.div>
 
           {/* Content Column */}
