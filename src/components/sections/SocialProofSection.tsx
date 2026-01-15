@@ -55,7 +55,7 @@ const SocialProofSection = () => {
           delay: 0.2
         }}>
             <div className="relative">
-              <img alt="Tutora feliz abraçando seu cachorro recuperado" className="w-full h-auto rounded-3xl image-premium" src="/lovable-uploads/94ad62ff-82e9-4c9b-ae2f-aef6735a2405.jpg" />
+              <img alt="Tutora feliz abraçando seu cachorro recuperado" className="w-full h-auto rounded-3xl image-premium" src="/lovable-uploads/22cbfbe1-0767-4a7a-8e4e-c77c882a6fa1.png" />
               {/* Accent decoration */}
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-br from-whatsapp to-whatsapp-hover rounded-2xl opacity-20 blur-lg" />
             </div>
