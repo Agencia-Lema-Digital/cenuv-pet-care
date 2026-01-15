@@ -24,7 +24,7 @@ const FinalCTASection = () => {
         }}>
             <img alt="Veterinário examinando gato com carinho e profissionalismo" className="w-full h-auto rounded-3xl" style={{
             boxShadow: "0 8px 32px -8px rgba(0,0,0,0.4)"
-          }} src="/lovable-uploads/37a33011-c633-452e-96d1-180530a4b3b9.jpg" />
+          }} src="/lovable-uploads/8ac88f69-96a8-4c7f-9b59-cc544c5931d0.png" />
           </motion.div>
 
           {/* Content Column */}
