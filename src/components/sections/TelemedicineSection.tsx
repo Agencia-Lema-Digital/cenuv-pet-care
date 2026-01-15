@@ -11,7 +11,7 @@ const staggerContainer = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.12,
       delayChildren: 0.2
     }
   }
@@ -44,12 +44,12 @@ const TelemedicineSection = () => {
   return (
     <section 
       id="telemedicina" 
-      className="section-padding bg-cenuv-peach"
+      className="bg-[#FFF4EB]"
       aria-labelledby="telemedicine-title"
     >
-      <div className="container-wide">
+      <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-20 text-center">
+        {/* Header */}
         <motion.div
-          className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -57,45 +57,47 @@ const TelemedicineSection = () => {
         >
           <h2 
             id="telemedicine-title" 
-            className="heading-lg text-cenuv-burgundy mb-4"
+            className="text-2xl md:text-4xl font-bold text-[#4E1E2A]"
           >
             Atendimento por Telemedicina em Nefrologia Veterinária
           </h2>
-          <p className="body-lg text-cenuv-text-muted max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-[#7D5A4A] mt-2 max-w-2xl mx-auto leading-relaxed">
             Cuidado especializado para o seu pet, sem sair de casa. 
             Conecte-se com nossos especialistas de qualquer lugar do Brasil.
           </p>
         </motion.div>
 
-        <motion.ul
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+        {/* Cards Grid */}
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-12"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
           {telemedicineFeatures.map((feature, index) => (
-            <motion.li
+            <motion.div
               key={index}
               variants={fadeInUp}
               transition={{ duration: 0.5 }}
-              className="card-premium bg-white p-6 text-center group"
+              className="bg-white rounded-2xl p-6 shadow-md flex flex-col items-center text-center hover:shadow-lg hover:scale-[1.02] transition-all duration-200"
             >
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-cenuv-coral/20 flex items-center justify-center group-hover:bg-cenuv-coral/30 transition-colors duration-300">
-                <feature.icon className="w-8 h-8 text-cenuv-coral" />
+              <div className="bg-[#FDECEC] text-[#D06C6C] p-3 rounded-full mb-4">
+                <feature.icon className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-semibold text-cenuv-burgundy mb-2">
+              <h3 className="font-semibold text-[#4E1E2A] text-lg">
                 {feature.title}
               </h3>
-              <p className="text-sm text-cenuv-text-muted leading-relaxed">
+              <p className="text-[#7D5A4A] text-sm mt-2 leading-relaxed">
                 {feature.description}
               </p>
-            </motion.li>
+            </motion.div>
           ))}
-        </motion.ul>
+        </motion.div>
 
+        {/* CTA Button */}
         <motion.div
-          className="text-center mt-10"
+          className="mt-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -105,7 +107,7 @@ const TelemedicineSection = () => {
             href="https://wa.me/5527997433130?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta%20por%20telemedicina"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white font-bold rounded-full px-8 py-4 text-lg transition-all duration-300 hover:scale-105 shadow-lg"
+            className="bg-[#25D366] hover:bg-green-600 text-white font-bold px-6 py-3 rounded-full inline-flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg"
             aria-label="Agendar consulta por telemedicina via WhatsApp"
           >
             <Video className="w-5 h-5" />

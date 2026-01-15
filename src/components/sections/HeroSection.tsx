@@ -3,20 +3,12 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Heart, Shield, Stethoscope } from "lucide-react";
 
 const fadeInUp = {
-  hidden: {
-    opacity: 0,
-    y: 30
-  },
-  visible: {
-    opacity: 1,
-    y: 0
-  }
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 }
 };
 
 const staggerContainer = {
-  hidden: {
-    opacity: 0
-  },
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
@@ -28,38 +20,28 @@ const staggerContainer = {
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden">
-      {/* Full background image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: `url('/lovable-uploads/a301d8ec-265b-457d-9b35-73f035aa7586.jpg')`,
-        }}
-      >
-        {/* Dark overlay for text legibility */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
-      </div>
-      
-      <div className="container-wide relative z-10 section-padding">
-        <div className="max-w-3xl mx-auto lg:mx-0">
+    <section className="bg-gradient-to-br from-cenuv-cream via-cenuv-peach/30 to-cenuv-cream overflow-hidden">
+      <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          {/* Text Column - Left */}
           <motion.div 
-            className="text-center lg:text-left" 
-            variants={staggerContainer} 
-            initial="hidden" 
+            className="order-2 md:order-1 text-left"
+            variants={staggerContainer}
+            initial="hidden"
             animate="visible"
           >
             <motion.h1 
-              className="text-3xl md:text-5xl lg:text-6xl font-semibold text-white mb-6 leading-tight" 
-              variants={fadeInUp} 
+              className="text-3xl md:text-5xl font-bold text-[#2E1D1C] leading-tight"
+              variants={fadeInUp}
               transition={{ duration: 0.6 }}
             >
-              <span className="block">Seu pet não pode esperar.</span>
-              <span className="block text-cenuv-peach mt-2">Quando o rim sofre, cada minuto importa.</span>
+              Seu pet não pode esperar.
+              <span className="block text-cenuv-coral mt-2">Quando o rim sofre, cada minuto importa.</span>
             </motion.h1>
 
             <motion.p 
-              className="text-base md:text-lg lg:text-xl text-white/90 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed" 
-              variants={fadeInUp} 
+              className="text-base md:text-lg text-[#7D5A4A] mt-4 max-w-md leading-relaxed"
+              variants={fadeInUp}
               transition={{ duration: 0.6, delay: 0.15 }}
             >
               O CENUV é um centro veterinário especializado em doenças renais e urinárias em cães e gatos. 
@@ -68,8 +50,8 @@ const HeroSection = () => {
 
             {/* CTA Button */}
             <motion.div 
-              className="mb-10" 
-              variants={fadeInUp} 
+              className="mt-6"
+              variants={fadeInUp}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <WhatsAppButton text="FALAR COM O ESPECIALISTA AGORA" variant="large" />
@@ -77,29 +59,48 @@ const HeroSection = () => {
 
             {/* Trust badges */}
             <motion.div 
-              className="flex flex-wrap justify-center lg:justify-start gap-4 md:gap-6" 
-              variants={fadeInUp} 
+              className="flex flex-wrap gap-4 mt-8"
+              variants={fadeInUp}
               transition={{ duration: 0.6, delay: 0.45 }}
             >
-              <div className="flex items-center gap-2 text-white/90 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                <div className="w-10 h-10 rounded-full bg-cenuv-coral/30 flex items-center justify-center">
+              <div className="flex items-center gap-2 text-[#2E1D1C]">
+                <div className="w-10 h-10 rounded-full bg-cenuv-coral/20 flex items-center justify-center">
                   <Heart className="w-5 h-5 text-cenuv-coral" />
                 </div>
-                <span className="text-sm md:text-base font-medium">Atendimento humanizado</span>
+                <span className="text-sm font-medium">Atendimento humanizado</span>
               </div>
-              <div className="flex items-center gap-2 text-white/90 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                <div className="w-10 h-10 rounded-full bg-cenuv-coral/30 flex items-center justify-center">
+              <div className="flex items-center gap-2 text-[#2E1D1C]">
+                <div className="w-10 h-10 rounded-full bg-cenuv-coral/20 flex items-center justify-center">
                   <Stethoscope className="w-5 h-5 text-cenuv-coral" />
                 </div>
-                <span className="text-sm md:text-base font-medium">Especialistas</span>
+                <span className="text-sm font-medium">Especialistas</span>
               </div>
-              <div className="flex items-center gap-2 text-white/90 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                <div className="w-10 h-10 rounded-full bg-cenuv-coral/30 flex items-center justify-center">
+              <div className="flex items-center gap-2 text-[#2E1D1C]">
+                <div className="w-10 h-10 rounded-full bg-cenuv-coral/20 flex items-center justify-center">
                   <Shield className="w-5 h-5 text-cenuv-coral" />
                 </div>
-                <span className="text-sm md:text-base font-medium">Diagnóstico preciso</span>
+                <span className="text-sm font-medium">Diagnóstico preciso</span>
               </div>
             </motion.div>
+          </motion.div>
+
+          {/* Image Column - Right */}
+          <motion.div 
+            className="order-1 md:order-2"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/a301d8ec-265b-457d-9b35-73f035aa7586.jpg"
+                alt="Veterinária segurando cachorro com carinho em clínica especializada"
+                className="w-full h-[400px] md:h-[500px] object-cover rounded-3xl md:rounded-l-3xl md:rounded-r-[32px] shadow-xl"
+              />
+              {/* Decorative elements */}
+              <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-gradient-to-br from-cenuv-gold to-cenuv-orange rounded-2xl opacity-70 blur-sm -z-10" />
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-cenuv-coral to-cenuv-burgundy rounded-full opacity-50 blur-sm -z-10" />
+            </div>
           </motion.div>
         </div>
       </div>
