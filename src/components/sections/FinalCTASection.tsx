@@ -74,7 +74,7 @@ const FinalCTASection = () => {
             </motion.div>
 
             {/* Trust badges */}
-            <motion.div className="flex flex-wrap justify-center lg:justify-start gap-6 mt-10" initial={{
+            <motion.div className="flex-wrap justify-center mt-10 gap-[24px] flex-col flex items-start lg:justify-center" initial={{
             opacity: 0,
             y: 20
           }} whileInView={{
