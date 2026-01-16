@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=Arima:wght@400;600;700&display=swap');
 
 @layer base {
   :root {
@@ -297,5 +297,38 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+  /* Remove o bloco branco do topo do menu mobile */
+  .mobile-menu-header,
+  .mobile-menu-top,
+  .menu-header,
+  .menu-wrapper > div:first-child {
+    background: transparent !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  /* Estilo dos itens do menu (cards brancos) */
+  .mobile-menu a,
+  .mobile-menu li,
+  .mobile-menu-item {
+    background: hsl(0 0% 100%) !important;
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    font-family: 'Arima', cursive !important;
+    font-weight: 600;
+    font-size: 18px;
+    color: hsl(0 0% 12%);
+  }
+
+  /* Efeito de toque */
+  .mobile-menu a:hover {
+    background: hsl(0 0% 96%) !important;
   }
 }
