@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text Column - Left */}
           <motion.div className="order-2 md:order-1 text-left" variants={staggerContainer} initial="hidden" animate="visible">
-            <motion.h1 className="text-3xl md:text-5xl font-bold text-[#2E1D1C] leading-tight text-center" variants={fadeInUp} transition={{
+            <motion.h1 className="text-3xl md:text-5xl font-bold text-[#2E1D1C] leading-tight text-left" variants={fadeInUp} transition={{
             duration: 0.6
           }}>
               Seu pet não pode esperar.
