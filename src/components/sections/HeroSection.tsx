@@ -29,14 +29,15 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text Column - Left */}
           <motion.div className="order-2 md:order-1 text-left" variants={staggerContainer} initial="hidden" animate="visible">
-            <motion.h1 className="text-3xl md:text-5xl font-bold text-[#2E1D1C] leading-tight text-left" variants={fadeInUp} transition={{
+            <motion.h1 className="text-3xl font-bold text-[#2E1D1C] leading-tight text-left md:text-4xl" variants={fadeInUp} transition={{
             duration: 0.6
           }}>
               Seu pet não pode esperar.
-              <span className="block text-cenuv-coral mt-2">Quando o rim sofre, cada minuto importa.</span>
+              <span className="block text-cenuv-coral mt-2">Quando o rim sofre,
+cada minuto importa.</span>
             </motion.h1>
 
-            <motion.p className="text-base md:text-lg text-[#7D5A4A] mt-4 max-w-md leading-relaxed" variants={fadeInUp} transition={{
+            <motion.p className="text-base md:text-lg text-[#7D5A4A] mt-4 max-w-md leading-relaxed text-left" variants={fadeInUp} transition={{
             duration: 0.6,
             delay: 0.15
           }}>
