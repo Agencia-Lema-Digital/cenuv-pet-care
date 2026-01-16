@@ -110,19 +110,19 @@ const Header = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3, ease: "easeInOut" }}
-              className="fixed top-0 right-0 h-full w-[280px] bg-white shadow-xl md:hidden"
+              className="fixed top-0 right-0 h-full w-[280px] bg-primary shadow-xl md:hidden"
               aria-label="Menu mobile"
             >
-              <div className="flex items-center justify-between p-4 border-b border-cenuv-cream">
+              <div className="flex items-center justify-between p-4 border-b border-primary-foreground/20">
                 <img 
                   src={logo} 
                   alt="CENUV" 
-                  className="h-10 w-auto" 
+                  className="h-10 w-auto brightness-0 invert" 
                 />
                 <button
                   type="button"
                   onClick={closeMenu}
-                  className="p-2 rounded-lg text-cenuv-burgundy hover:bg-cenuv-peach/50 transition-colors"
+                  className="p-2 rounded-lg text-primary-foreground hover:bg-primary-foreground/10 transition-colors"
                   aria-label="Fechar menu"
                 >
                   <X className="w-6 h-6" />
@@ -140,7 +140,7 @@ const Header = () => {
                     <a
                       href={link.href}
                       onClick={closeMenu}
-                      className="block py-4 px-6 text-cenuv-burgundy text-lg font-medium border-b border-cenuv-cream hover:bg-cenuv-peach/30 transition-colors"
+                      className="block py-4 px-6 text-primary-foreground text-lg font-medium border-b border-primary-foreground/20 hover:bg-primary-foreground/10 transition-colors"
                     >
                       {link.label}
                     </a>
