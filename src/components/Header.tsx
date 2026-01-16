@@ -92,13 +92,14 @@ const Header = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <>
-            {/* Backdrop */}
+            {/* Backdrop with Blur Effect */}
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-black/30 md:hidden"
+              initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
+              animate={{ opacity: 1, backdropFilter: "blur(8px)" }}
+              exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
+              transition={{ duration: 0.3 }}
+              className="fixed inset-0 bg-black/40 md:hidden"
+              style={{ WebkitBackdropFilter: "blur(8px)" }}
               onClick={closeMenu}
               aria-hidden="true"
             />
