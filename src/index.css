@@ -195,19 +195,23 @@
   }
 
   /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arima', cursive;
+  }
+
   .heading-xl {
     @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Arima', cursive;
   }
 
   .heading-lg {
     @apply text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Arima', cursive;
   }
 
   .heading-md {
     @apply text-xl md:text-2xl lg:text-3xl font-semibold leading-tight;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Arima', cursive;
   }
 
   .body-lg {

@@ -28,8 +28,8 @@ const HeroSection = () => {
       <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-20 w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text Column - Left */}
-          <motion.div className="order-2 md:order-1 text-left" variants={staggerContainer} initial="hidden" animate="visible">
-            <motion.h1 className="text-3xl font-bold text-[#2E1D1C] leading-tight text-left md:text-4xl" variants={fadeInUp} transition={{
+          <motion.div className="order-2 md:order-1 text-center md:text-left" variants={staggerContainer} initial="hidden" animate="visible">
+            <motion.h1 className="text-3xl font-bold text-[#2E1D1C] leading-tight md:text-4xl" variants={fadeInUp} transition={{
             duration: 0.6
           }}>
               Seu pet não pode esperar.
@@ -37,7 +37,7 @@ const HeroSection = () => {
 cada minuto importa.</span>
             </motion.h1>
 
-            <motion.p className="text-base md:text-lg text-[#7D5A4A] mt-4 max-w-md leading-relaxed text-left" variants={fadeInUp} transition={{
+            <motion.p className="text-base md:text-lg text-[#7D5A4A] mt-4 max-w-md mx-auto md:mx-0 leading-relaxed" variants={fadeInUp} transition={{
             duration: 0.6,
             delay: 0.15
           }}>
@@ -46,7 +46,7 @@ cada minuto importa.</span>
             </motion.p>
 
             {/* CTA Button */}
-            <motion.div className="mt-6" variants={fadeInUp} transition={{
+            <motion.div className="mt-6 flex justify-center md:justify-start" variants={fadeInUp} transition={{
             duration: 0.6,
             delay: 0.3
           }}>
@@ -54,24 +54,24 @@ cada minuto importa.</span>
             </motion.div>
 
             {/* Trust badges */}
-            <motion.div className="flex flex-wrap gap-4 mt-8" variants={fadeInUp} transition={{
+            <motion.div className="flex flex-wrap justify-center md:justify-start gap-5 md:gap-4 mt-10 md:mt-8" variants={fadeInUp} transition={{
             duration: 0.6,
             delay: 0.45
           }}>
               <div className="flex items-center gap-2 text-[#2E1D1C]">
-                <div className="w-10 h-10 rounded-full bg-cenuv-coral/20 flex items-center justify-center">
+                <div className="w-11 h-11 md:w-10 md:h-10 rounded-full bg-cenuv-coral/20 flex items-center justify-center">
                   <Heart className="w-5 h-5 text-cenuv-coral" />
                 </div>
                 <span className="text-sm font-medium">Atendimento humanizado</span>
               </div>
               <div className="flex items-center gap-2 text-[#2E1D1C]">
-                <div className="w-10 h-10 rounded-full bg-cenuv-coral/20 flex items-center justify-center">
+                <div className="w-11 h-11 md:w-10 md:h-10 rounded-full bg-cenuv-coral/20 flex items-center justify-center">
                   <Stethoscope className="w-5 h-5 text-cenuv-coral" />
                 </div>
                 <span className="text-sm font-medium">Especialistas</span>
               </div>
               <div className="flex items-center gap-2 text-[#2E1D1C]">
-                <div className="w-10 h-10 rounded-full bg-cenuv-coral/20 flex items-center justify-center">
+                <div className="w-11 h-11 md:w-10 md:h-10 rounded-full bg-cenuv-coral/20 flex items-center justify-center">
                   <Shield className="w-5 h-5 text-cenuv-coral" />
                 </div>
                 <span className="text-sm font-medium">Diagnóstico preciso</span>
