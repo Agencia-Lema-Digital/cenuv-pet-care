@@ -194,9 +194,17 @@
     background: linear-gradient(180deg, hsl(30 50% 98%) 0%, hsl(25 65% 96%) 100%);
   }
 
-  /* Typography - Arima for all headings */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Arima', cursive;
+  /* Typography - Arima for ALL headings and topics across all devices */
+  h1, h2, h3, h4, h5, h6,
+  .heading-xl, .heading-lg, .heading-md, .heading-sm,
+  .section-title, .section-subtitle, .card-title,
+  [class*="font-semibold"], [class*="font-bold"] {
+    font-family: 'Arima', cursive !important;
+  }
+
+  /* Utility class to force Arima font */
+  .font-arima {
+    font-family: 'Arima', cursive !important;
   }
 
   .heading-xl {
@@ -232,6 +240,11 @@
   .card-title {
     font-family: 'Arima', cursive;
     @apply text-lg md:text-xl font-semibold;
+  }
+
+  /* Nav links and menu items with Arima */
+  nav a, .nav-link, .menu-item {
+    font-family: 'Arima', cursive;
   }
 
   .body-lg {
