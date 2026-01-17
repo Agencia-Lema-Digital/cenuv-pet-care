@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 const navLinks = [{
   href: "#sintomas",
   label: "Sintomas"
@@ -13,10 +12,8 @@ const navLinks = [{
   href: "#processo",
   label: "Como Funciona"
 }];
-
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -25,7 +22,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-sm shadow-md" : "bg-white/90 backdrop-blur-sm"}`}>
-      <div className="container-wide flex items-center justify-between md:justify-between justify-center py-4 px-4 md:px-12">
+      <div className="container-wide md:justify-between py-4 px-4 md:px-12 flex-row flex items-center justify-between">
         <img alt="CENUV - Centro de Nefrologia e Urologia Veterinária" className="h-12 md:h-16 w-auto" src="/lovable-uploads/729e0dbf-16fe-43b2-9190-585c853a5012.png" />
         
         {/* Navigation - hidden on mobile, visible on tablet/desktop */}
