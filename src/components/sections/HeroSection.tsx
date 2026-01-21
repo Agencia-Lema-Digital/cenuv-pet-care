@@ -91,7 +91,7 @@ cada minuto importa.</span>
           delay: 0.3
         }}>
             <div className="relative w-full h-[400px] md:h-[550px]">
-              <img src="/lovable-uploads/a301d8ec-265b-457d-9b35-73f035aa7586.jpg" alt="Veterinária segurando pet com carinho em clínica especializada" className="w-full h-full object-cover rounded-3xl" />
+              <img alt="Veterinária segurando pet com carinho em clínica especializada" className="w-full h-full object-cover rounded-3xl" src="/lovable-uploads/ec3194da-baa3-408a-8cac-4d14b00fb0bf.jpg" />
               {/* Left side opacity gradient - blends into background */}
               <div className="absolute left-0 top-0 h-full w-1/3 bg-gradient-to-r from-[#FFF4EB]/90 via-[#FFF4EB]/40 to-transparent rounded-l-3xl pointer-events-none" />
               {/* Decorative elements */}
