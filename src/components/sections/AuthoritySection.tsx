@@ -6,9 +6,6 @@ const benefits = [{
   icon: Award,
   text: "Atendimento 100% especializado em nefrologia e urologia veterinária"
 }, {
-  icon: CheckCircle,
-  text: "Casos que outras clínicas não conseguem resolver"
-}, {
   icon: Zap,
   text: "Tratamentos modernos e acompanhamento contínuo"
 }, {
