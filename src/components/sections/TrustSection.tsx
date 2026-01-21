@@ -39,7 +39,7 @@ const TrustSection = () => {
           }} transition={{
             duration: 0.5
           }}>
-              A decisão de buscar um especialista muda tudo.
+              A decisão de buscar profissional especializado muda tudo.
             </motion.h2>
 
             <motion.p className="body-lg leading-relaxed mb-10 opacity-95" initial={{
