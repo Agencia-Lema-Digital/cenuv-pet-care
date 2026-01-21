@@ -50,7 +50,7 @@ cada minuto importa.</span>
             duration: 0.6,
             delay: 0.3
           }}>
-              <WhatsAppButton text="FALAR COM O ESPECIALISTA AGORA" variant="large" />
+              <WhatsAppButton text="FALAR COM UM PROFISSIONAL ESPECIALIZADO" variant="large" />
             </motion.div>
 
             {/* Trust badges */}

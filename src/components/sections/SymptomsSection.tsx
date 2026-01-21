@@ -126,7 +126,7 @@ const SymptomsSection = () => {
             duration: 0.5,
             delay: 0.5
           }}>
-              <WhatsAppButton text="Quero falar com o especialista agora" />
+              <WhatsAppButton text="Falar com um Profissional especializado" />
             </motion.div>
           </div>
         </div>
