@@ -19,7 +19,7 @@ const WhatsAppButton = ({ text, variant = "primary", className = "" }: WhatsAppB
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      className={`${baseClasses} ${variantClasses} ${className}`}
+      className={`${baseClasses} ${variantClasses} ${className} font-arima uppercase`}
     >
       <FaWhatsapp className="w-6 h-6" />
       <span>{text}</span>
