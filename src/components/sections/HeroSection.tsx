@@ -68,7 +68,7 @@ cada minuto importa.</span>
                 <div className="w-11 h-11 md:w-10 md:h-10 rounded-full bg-cenuv-coral/20 flex items-center justify-center">
                   <Stethoscope className="w-5 h-5 text-cenuv-coral" />
                 </div>
-                <span className="text-sm font-medium">Especialistas</span>
+                <span className="text-sm font-medium">Profissional especializado</span>
               </div>
               <div className="flex items-center gap-2 text-[#2E1D1C]">
                 <div className="w-11 h-11 md:w-10 md:h-10 rounded-full bg-cenuv-coral/20 flex items-center justify-center">

@@ -110,8 +110,7 @@ const SymptomsSection = () => {
             delay: 0.4
           }}>
               <p className="body-lg text-foreground">
-                Esses sinais podem indicar <strong>problemas sérios nos rins ou no sistema urinário</strong>. 
-                Quanto antes o especialista avalia, maiores são as chances de controle e qualidade de vida.
+                Esses sinais podem indicar <strong>problemas sérios nos rins ou no sistema urinário</strong>. Quanto antes um profissional especializado lhe atender, maiores são as chances de controle e qualidade de vida.
               </p>
             </motion.div>
 
