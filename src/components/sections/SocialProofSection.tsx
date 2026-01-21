@@ -37,7 +37,7 @@ const SocialProofSection = () => {
               <p className="text-muted-foreground italic body-lg">
                 "Não tenho palavras para agradecer. Minha gatinha voltou a ter qualidade de vida."
               </p>
-              <p className="text-sm text-muted-foreground mt-3 font-medium">— Tutora do CENUV</p>
+              <p className="text-sm text-muted-foreground mt-3 font-medium">— Cliente da CENUV</p>
             </div>
           </motion.div>
 
