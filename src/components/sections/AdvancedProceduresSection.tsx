@@ -5,7 +5,7 @@ const procedures = [
   {
     icon: HeartPulse,
     title: "Diálise Veterinária",
-    description: "Suporte renal especializado para pacientes com insuficiência renal aguda ou crônica.",
+    description: "Suporte renal especializado para pacientes com lesão renal aguda ou crônica.",
   },
   {
     icon: Stethoscope,
