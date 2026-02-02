@@ -157,7 +157,7 @@ const TelemedicineSection = () => {
         duration: 0.6,
         delay: 0.4
       }}>
-          <a href="https://wa.me/5527997433130?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta%20por%20telemedicina" target="_blank" rel="noopener noreferrer" className="bg-[#25D366] hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full inline-flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg text-lg font-serif" aria-label="Agendar consulta por telemedicina via WhatsApp">
+          <a href="https://wa.me/5527997433130?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta%20por%20telemedicina" className="bg-[#25D366] hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full inline-flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg text-lg font-serif" aria-label="Agendar consulta por telemedicina via WhatsApp">
             <Video className="w-5 h-5" />
             Agendar telemedicina  
           </a>

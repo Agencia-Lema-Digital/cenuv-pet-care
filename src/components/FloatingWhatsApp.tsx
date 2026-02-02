@@ -6,8 +6,6 @@ const FloatingWhatsApp = () => {
   return (
     <a
       href={whatsappLink}
-      target="_blank"
-      rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 bg-whatsapp hover:bg-whatsapp-dark text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 animate-pulse-gentle"
       aria-label="Falar no WhatsApp"
     >
