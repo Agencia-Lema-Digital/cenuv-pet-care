@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import HeroSection from "@/components/sections/HeroSection";
 import SymptomsSection from "@/components/sections/SymptomsSection";
@@ -27,6 +28,7 @@ const Index = () => {
         <SocialProofSection />
         <FinalCTASection />
       </main>
+      <Footer />
       <FloatingWhatsApp />
     </>
   );
