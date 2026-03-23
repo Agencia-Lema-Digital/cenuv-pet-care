@@ -28,6 +28,7 @@ const Index = () => {
         <SocialProofSection />
         <FinalCTASection />
       </main>
+      <Footer />
       <FloatingWhatsApp />
     </>
   );
